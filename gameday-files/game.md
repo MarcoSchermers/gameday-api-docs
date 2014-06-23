@@ -34,7 +34,7 @@ The `<game>` element describes basic game information.
 
 #### <a name="gtype">Type</a>
 
-`type` identifies game type. It has one of eight values:
+`type` identifies game type. It has one of the following values:
 
  + `E` -- Exhibition
  + `S` -- Spring Training
@@ -86,14 +86,14 @@ The `<team/>` element describes a single team in the game. For a complete listin
 
 #### <a name="ttype">Type</a>
 
-`type` identifies the home and away team. It has one of two values:
+`type` identifies the home and away team. It has one of the following values:
 
 + `away`
 + `home`
 
 #### <a name="tcode">Code</a>
 
-`code` is a three-letter identifier. Generally, it is derived from the team's city name however, if the city is home to multiple teams **OR** the city name is longer than one word (e.g. St. Louis), the third letter in the team code is either an `a` denoting the American League or `n` denoting the National League. Using the Cardinals as an example, their `code` value is `sln`.
+`code` is a three-letter identifier. Generally, it is derived from the team's city name however, if the city is home to multiple teams **OR** the city name is longer than one word (e.g. St. Louis), the third letter in the team code is either an `a` denoting the American League or `n` denoting the National League. Using the St. Louis Cardinals as an example, their `code` value is `sln`.
 
 #### <a name="tfilecode">File Code</a>
 
@@ -101,7 +101,7 @@ The `<team/>` element describes a single team in the game. For a complete listin
 
 #### <a name="tabbreviation">Abbreviation</a>
 
-`abbrev` is the team's abbreviation.
+`abbrev` is the team abbreviation.
 
 #### <a name="tid">ID</a>
 
@@ -109,27 +109,27 @@ The `<team/>` element describes a single team in the game. For a complete listin
 
 #### <a name="tname">Name</a>
 
-`name` is the team's short name. Generally, this is the team's city however, a handful of cities are home to multiple teams, in which case, the short name includes the nickname. Using New York as an example, the Yankees `name` value is the "NY Yankees" while the Mets' is the "NY Mets".
+`name` is the team short name. Generally, this is the team's city however, a handful of cities are home to multiple teams, in which case, the short name includes the nickname. Using New York as an example, the Yankees `name` value is the `NY Yankees` while the Mets' is the `NY Mets`.
 
 #### <a name="tfullname">Full Name</a>
 
-`name_full` is the team's full name.
+`name_full` is the team full name.
 
 #### <a name="tbriefname">Brief Name</a>
 
-`name_brief` is the team's nickname.
+`name_brief` is the team nickname.
 
 #### <a name="twins">Wins</a>
 
-`w` is the team's win total. This total **includes** the results of the game in question.
+`w` is the team win total. This total **includes** the results of the game in question.
 
 #### <a name="tlosses">Losses</a>
 
-`l` is the team's loss total. This total **includes** the results of the game in question.
+`l` is the team loss total. This total **includes** the results of the game in question.
 
 #### <a name="tdivisionid">Division ID</a>
 
-`division_id` is the ID number for the team's division. It has one of six values:
+`division_id` is the ID number for the team's division. It has one of the following values:
 
 + `200` -- American League West
 + `201` -- American League East
@@ -140,16 +140,18 @@ The `<team/>` element describes a single team in the game. For a complete listin
 
 #### <a name="tleagueid">League ID</a>
 
-`league_id` is the ID number used for the team's league. It has one of two values:
+`league_id` is the ID number for the team's league. It has one of the following values:
+
+MLB
 
 + `103` -- American League
 + `104` -- National League
 
-The following are *uncommon* values:
+Non-MLB
 
 + `107` -- College Baseball
 + `108` -- College
-+ `111` -- Farm System?
++ `111` -- Southern League (AA)
 + `123` -- Unknown
 + `125` -- Mexican
 + `160` -- International
@@ -158,12 +160,14 @@ The following are *uncommon* values:
 
 #### <a name="tleague">League</a>
 
-`league` is the short name for the team's league. It has one of two values:
+`league` is the short name for the team's league. It has one of the following values:
+
+MLB
 
 + `AL` -- American League
 + `NL` -- National
 
-The following are *uncommon* values:
+Non-MLB
 
 + `ACC` -- Atlantic Coast Conference
 + `BE` -- Big East
@@ -172,7 +176,7 @@ The following are *uncommon* values:
 + `FSL` -- Unknown
 + `FUT` -- Futures
 + `SOU` -- Southern League
-+ `""` -- Empty string with no value
++ `""` -- Empty string
 
 ## <a name="estadium">Stadium Element</a>
 
@@ -193,7 +197,7 @@ The `<stadium />` element describes the venue for the game.
 
 #### <a name="sname">Name</a>
 
-`name` is the venue's name.
+`name` is the venue name.
 
 #### <a name="svenueweatherchannelcode">Venue Weather Channel Code</a>
 
@@ -201,4 +205,4 @@ The `<stadium />` element describes the venue for the game.
 
 #### <a name="slocation">Location</a>
 
-`location` is the location of the venue.
+`location` is the venue location.
