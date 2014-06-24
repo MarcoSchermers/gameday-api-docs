@@ -565,21 +565,21 @@ Note: Attribute information taken from [here](https://web.archive.org/web/200904
 + `AB` -- 
 + `CH` -- Changeup
 + `CU` -- Cutter
-+ `EP` --
++ `EP` -- Eephus
 + `FA` -- Fastball
-+ `FC` --
-+ `FF` --
++ `FC` -- Fastball (Cutter)
++ `FF` -- Four-seam Fastball
 + `FO` --
-+ `FS` --
-+ `FT` --
++ `FS` -- Splitter
++ `FT` -- Two-seam Fastball
 + `IN` --
-+ `KC` --
++ `KC` -- Knuckle Curve
 + `KN` -- Knuckleball
-+ `PO` --
++ `PO` -- Pitch out
 + `SC` --
 + `SI` -- Sinker
 + `SL` -- Slider
-+ `UN` -- 
++ `UN` -- Unidentified
 
 #### <a name="pitchconfidence">Confidence</a>
 
